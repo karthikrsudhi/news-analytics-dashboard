@@ -10,11 +10,11 @@ st.set_page_config(
 
 st_autorefresh(interval=300000, key="datarefresh")
 
-# DATABASE_URL = "postgresql://postgres:karthiksudhi@news-db.czasscka2fsx.ap-south-1.rds.amazonaws.com:5432/postgres"
+DATABASE_URL = "postgresql://postgres:karthiksudhi@news-db.czasscka2fsx.ap-south-1.rds.amazonaws.com:5432/postgres"
 
-# engine = create_engine(DATABASE_URL)
+engine = create_engine(DATABASE_URL)
 
-# df = pd.read_sql("SELECT * FROM news_data ORDER BY created_at DESC", engine)
+df = pd.read_sql("SELECT * FROM news_data ORDER BY created_at DESC", engine)
 
 # st.markdown("""
 # <style>
