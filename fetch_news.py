@@ -3,14 +3,14 @@ import psycopg2
 from textblob import TextBlob
 from datetime import datetime
 
-# from dotenv import load_dotenv
-# import os
+from dotenv import load_dotenv
+import os
 
-# load_dotenv()
+load_dotenv()
 
-# api_key = "YOUR_API_KEY""
+api_key = "YOUR_API_KEY""
 
-# api_key = os.getenv("NEWS_API_KEY")
+api_key = os.getenv("NEWS_API_KEY")
 
 # conn = psycopg2.connect(
 #     host="news-db.czasscka2fsx.ap-south-1.rds.amazonaws.com",
