@@ -33,11 +33,11 @@ params = {
     "apiKey": API_KEY
 }
 
-# response = requests.get(url, params=params)
+response = requests.get(url, params=params)
 
-# articles = response.json().get("articles", [])
+articles = response.json().get("articles", [])
 
-# print("Number of articles:", len(articles))
+print("Number of articles:", len(articles))
 
 # for article in articles:
 
