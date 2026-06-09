@@ -24,14 +24,14 @@ print(conn.get_dsn_parameters())
 
 cur = conn.cursor()
 
-# url = "https://newsapi.org/v2/everything"
+url = "https://newsapi.org/v2/everything"
 
-# params = {
-#     "q": "AI OR technology OR cloud",
-#     "language": "en",
-#     "pageSize": 20,
-#     "apiKey": API_KEY
-# }
+params = {
+    "q": "AI OR technology OR cloud",
+    "language": "en",
+    "pageSize": 20,
+    "apiKey": API_KEY
+}
 
 # response = requests.get(url, params=params)
 
