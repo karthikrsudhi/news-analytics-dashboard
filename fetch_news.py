@@ -39,13 +39,13 @@ articles = response.json().get("articles", [])
 
 print("Number of articles:", len(articles))
 
-# for article in articles:
+for article in articles:
 
-#     title = article.get("title")
+    title = article.get("title")
 
-#     source_name = article.get("source", {}).get("name")
+    source_name = article.get("source", {}).get("name")
 
-#     published_at = article.get("publishedAt")
+    published_at = article.get("publishedAt")
 
 #     if published_at:
 #         news_date = datetime.strptime(
