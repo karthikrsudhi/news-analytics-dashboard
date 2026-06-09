@@ -10,7 +10,7 @@ conn = psycopg2.connect(
 
 print("Database connected successfully!")
 
-# cur = conn.cursor()
+cur = conn.cursor()
 
 # cur.execute("""
 # CREATE TABLE IF NOT EXISTS news_data (
