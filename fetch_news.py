@@ -47,13 +47,13 @@ for article in articles:
 
     published_at = article.get("publishedAt")
 
-#     if published_at:
-#         news_date = datetime.strptime(
-#             published_at,
-#             "%Y-%m-%dT%H:%M:%SZ"
-#         ).date()
-#     else:
-#         news_date = None
+    if published_at:
+        news_date = datetime.strptime(
+            published_at,
+            "%Y-%m-%dT%H:%M:%SZ"
+        ).date()
+    else:
+        news_date = None
 
 #     sentiment_score = TextBlob(title).sentiment.polarity
 
