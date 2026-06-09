@@ -51,38 +51,38 @@ Scores near 0 are neutral.
 </div>
 """, unsafe_allow_html=True)
 
-# st.sidebar.markdown("### Latest update data")
-# if not df.empty:
-#     st.sidebar.write(df["created_at"].max())
+st.sidebar.markdown("### Latest update data")
+if not df.empty:
+    st.sidebar.write(df["created_at"].max())
 
-# st.markdown('<div class="main-title">News analytics sentiment score dashboard</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">News analytics sentiment score dashboard</div>', unsafe_allow_html=True)
 
-# if df.empty:
-#     st.warning("No news data found in database.")
-# else:
-#     display_df = df[
-#         [
-#             "news_date",
-#             "source_name",
-#             "title",
-#             "sentiment_score",
-#             "sentiment_label",
-#             "created_at"
-#         ]
-#     ]
+if df.empty:
+    st.warning("No news data found in database.")
+else:
+    display_df = df[
+        [
+            "news_date",
+            "source_name",
+            "title",
+            "sentiment_score",
+            "sentiment_label",
+            "created_at"
+        ]
+    ]
 
-#     def color_sentiment(value):
-#         if value > 0:
-#             return "background-color: green; color: white"
-#         elif value < 0:
-#             return "background-color: red; color: white"
-#         else:
-#             return "background-color: gray; color: white"
+    def color_sentiment(value):
+        if value > 0:
+            return "background-color: green; color: white"
+        elif value < 0:
+            return "background-color: red; color: white"
+        else:
+            return "background-color: gray; color: white"
 
-#     styled_df = display_df.style.map(
-#         color_sentiment,
-#         subset=["sentiment_score"]
-#     )
+    styled_df = display_df.style.map(
+        color_sentiment,
+        subset=["sentiment_score"]
+    )
 
 #     st.dataframe(
 #         styled_df,
