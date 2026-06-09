@@ -8,7 +8,7 @@ conn = psycopg2.connect(
     port="5432"
 )
 
-# print("Database connected successfully!")
+print("Database connected successfully!")
 
 # cur = conn.cursor()
 
