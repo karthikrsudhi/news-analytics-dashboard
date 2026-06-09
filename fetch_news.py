@@ -83,9 +83,9 @@ for article in articles:
         sentiment_label
     ))
 
-# conn.commit()
+conn.commit()
 
-# print("Data inserted successfully!")
+print("Data inserted successfully!")
 
-# cur.close()
-# conn.close()
+cur.close()
+conn.close()
