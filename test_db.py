@@ -1,12 +1,12 @@
 import psycopg2
 
-# conn = psycopg2.connect(
-#     host="news-db.czasscka2fsx.ap-south-1.rds.amazonaws.com",
-#     database="postgres",
-#     user="postgres",
-#     password="YOUR_PASSWORD",
-#     port="5432"
-# )
+conn = psycopg2.connect(
+    host="news-db.czasscka2fsx.ap-south-1.rds.amazonaws.com",
+    database="postgres",
+    user="postgres",
+    password="YOUR_PASSWORD",
+    port="5432"
+)
 
 # print("Database connected successfully!")
 
