@@ -55,14 +55,14 @@ for article in articles:
     else:
         news_date = None
 
-#     sentiment_score = TextBlob(title).sentiment.polarity
+    sentiment_score = TextBlob(title).sentiment.polarity
 
-#     if sentiment_score > 0:
-#         sentiment_label = "Positive"
-#     elif sentiment_score < 0:
-#         sentiment_label = "Negative"
-#     else:
-#         sentiment_label = "Neutral"
+    if sentiment_score > 0:
+        sentiment_label = "Positive"
+    elif sentiment_score < 0:
+        sentiment_label = "Negative"
+    else:
+        sentiment_label = "Neutral"
         
 
 #     cur.execute("""
