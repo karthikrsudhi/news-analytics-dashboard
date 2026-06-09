@@ -16,31 +16,31 @@ engine = create_engine(DATABASE_URL)
 
 df = pd.read_sql("SELECT * FROM news_data ORDER BY created_at DESC", engine)
 
-# st.markdown("""
-# <style>
-# body {
-#     background-color: #0e1117;
-# }
-# .main-title {
-#     font-size: 42px;
-#     font-weight: bold;
-#     color: white;
-#     text-align: center;
-#     margin-bottom: 30px;
-# }
-# .sidebar-text {
-#     font-size: 15px;
-#     line-height: 1.6;
-# }
-# </style>
-# """, unsafe_allow_html=True)
+st.markdown("""
+<style>
+body {
+    background-color: #0e1117;
+}
+.main-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sidebar-text {
+    font-size: 15px;
+    line-height: 1.6;
+}
+</style>
+""", unsafe_allow_html=True)
 
-# st.sidebar.radio(
-#     "",
-#     ["View News", "Analytics"]
-# )
+st.sidebar.radio(
+    "",
+    ["View News", "Analytics"]
+)
 
-# st.sidebar.markdown("### Explanation")
+st.sidebar.markdown("### Explanation")
 # st.sidebar.markdown("""
 # <div class="sidebar-text">
 # Sentiment score indicates whether the news sentiment is positive or negative.
