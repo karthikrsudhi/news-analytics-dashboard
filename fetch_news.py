@@ -12,17 +12,17 @@ api_key = "YOUR_API_KEY""
 
 api_key = os.getenv("NEWS_API_KEY")
 
-# conn = psycopg2.connect(
-#     host="news-db.czasscka2fsx.ap-south-1.rds.amazonaws.com",
-#     database="postgres",
-#     user="postgres",
-#     password=os.getenv("DB_PASSWORD"),
-#     port="5432"
-# )
-# print(conn.get_dsn_parameters())
+conn = psycopg2.connect(
+    host="news-db.czasscka2fsx.ap-south-1.rds.amazonaws.com",
+    database="postgres",
+    user="postgres",
+    password=os.getenv("DB_PASSWORD"),
+    port="5432"
+)
+print(conn.get_dsn_parameters())
 
 
-# cur = conn.cursor()
+cur = conn.cursor()
 
 # url = "https://newsapi.org/v2/everything"
 
